@@ -8,11 +8,6 @@ const Comment = ({comment, refreshComments}) => {
 
   const { currentUser } = useContext(CurrentUserContext);
 
-  const formattedStartDate = new Date(comment.date).toLocaleString(
-    'en-US',
-    timeObject
-  );
-
   const handleHide = async () => {
     try {
       await hideComment(comment.id);
@@ -23,12 +18,20 @@ const Comment = ({comment, refreshComments}) => {
   };
   
 
+    const commentDate = new Date(comment.date);
+
+    const isValidDate = !isNaN(commentDate.getTime());
+  
+    const formattedStartDate = isValidDate
+      ? commentDate.toLocaleString('en-US', timeObject)
+      : "Now";
+
 
   return (
     <div key={comment.id - 900}>
       <h5>Commenter: {comment.commenter_name}</h5>
       <h6>Text: {comment.text}</h6>
-      {/* <h6>When {formattedStartDate}</h6> */}
+      <h6>When: {formattedStartDate}</h6>
       {currentUser.id === comment.user_id && (
         <button onClick={handleHide}>Delete Comment</button>
       )}
