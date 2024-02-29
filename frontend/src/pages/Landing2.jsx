@@ -13,7 +13,6 @@ import style from './styles/popup2.css';
 import Form from '../components/formloginandout';
 import logo from '../pages/assets/images/Group_1.png';
 
-
 const Landing2 = () => {
   const { currentUser } = useContext(CurrentUserContext);
   const [visitedBefore, setVisitedBefore] = useState(false);
@@ -162,7 +161,11 @@ const Landing2 = () => {
         {/* <button id="modal-btn" class="modal-btn">Open Modal <i class="uil uil-expand-arrows"></i></button> */}
         <div className="modal">
           <div className="modal-wrap">
-            <button  className=" px-3 h-8 bg-red-300 ml-2 rounded-md mt-2 text-white" ref={closeBtnRef} id="close-btn">
+            <button
+              className=" px-3 h-8 bg-red-300 ml-2 rounded-md mt-2 text-white"
+              ref={closeBtnRef}
+              id="close-btn"
+            >
               {' '}
               X{' '}
             </button>
@@ -172,12 +175,7 @@ const Landing2 = () => {
       </div>
 
       <div className="move-me">
-        <img
-          src={logo}
-          alt="Girl in a jacket"
-          width="140"
-          height="140"
-        />
+        <img src={logo} alt="Girl in a jacket" width="140" height="140" />
       </div>
 
       <div
@@ -209,7 +207,7 @@ const Landing2 = () => {
                 onClick={handleClick2}
                 className="button w-full h-12 font-bold"
               >
-                Jump Back In{' '}
+                Jump Back In!{' '}
               </button>
             </div>
           ) : (

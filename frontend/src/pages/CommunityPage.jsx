@@ -245,8 +245,6 @@ export default function CommunityPage() {
           </button>
         </div>
       </div>
-
-      {/* <Footer /> */}
     </>
   );
 }
