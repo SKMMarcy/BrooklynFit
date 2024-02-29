@@ -10,6 +10,8 @@ body {
 
 .main-left {
   flex: 0.8;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -23,8 +25,9 @@ body {
 }
 
 video {
-  height: 300px;
-  width: 400px;
+  height: 220px;
+  width: 250px;
+  flex-grow: 1;
   object-fit: cover;
 }
 
@@ -78,7 +81,8 @@ video {
 }
 
 .chat-window {
-  flex-grow: 1;
+  flex-grow: 2;
+  height: 100%;
   /* overflow-y: scroll; */
 }
 
@@ -128,7 +132,6 @@ video {
 
 .video-container {
   position: relative;
-  max-width: 28rem;
 }
 
 .video-container h1 {

@@ -156,9 +156,9 @@ const Room = () => {
   return (
     <>
       <div className="main">
-        <div className="main-left">
-          <div className="main-videos px-5 pt-5">
-            <div className='grid grid-cols-2' id="video-grid" ref={videoGrid}></div>
+        <div className="main-left max-h-full">
+          <div className="main-videos px-5 pt-5 flex">
+            <div className='grid grid-cols-2 h-40 h-40 h-40 h-40 flex-grow' id="video-grid" ref={videoGrid}></div>
           </div>
           <div className="main-controls">
             <div className="controls-block">
@@ -203,7 +203,7 @@ const Room = () => {
             </div>
           </div>
         </div>
-        <div className="main-right">
+        <div className="main-right max-h-full">
           <div className="header font-bold mb-5 mt-2">
             <h6>Chat</h6>
           </div>
@@ -225,12 +225,13 @@ const Room = () => {
               ))}
             </ul>
           </div>
-          <div className="message-container">
-            <form onSubmit={handleChatSubmit}>
+          <div className="message-container w-full">
+            <form  className='w-full' onSubmit={handleChatSubmit}>
               <input
                 id="chat_message"
                 name="chat_message"
                 type="text"
+                className='w-full'
                 placeholder="Type message here..."
               ></input>
               <button
