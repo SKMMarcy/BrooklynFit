@@ -6,13 +6,12 @@ import { useWorkoutStore } from '../store/store';
 import SammyPhoto from './assets/images/SammyPhoto.png';
 import MarvPhoto from './assets/images/MarvPhoto.png';
 import MarcyPhoto from './assets/images/MarcyPhoto.png';
-import KorPhoto from './assets/images/MarcyHeadshots-128 (1).jpg'
+import KorPhoto from './assets/images/MarcyHeadshots-128 (1).jpg';
 import logo from './assets/images/Union.png';
 import CurrentUserContext from '../contexts/current-user-context';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import Navigation_Desktop from '../components/Navigation_Desktop';
-
 
 import './styles/bar.css';
 
@@ -43,12 +42,11 @@ export default function Workouts() {
 
   return (
     <>
-      <Navigation style={{display: 'none'}} currentUser={currentUser} />
-{/* 
+      <Navigation style={{ display: 'none' }} currentUser={currentUser} />
+      {/* 
       <div className='flex justify-center'>
         <Navigation_Desktop />
       </div> */}
-    
 
       <div>
         <div className="h-screen bg-center bg-no-repeat bg-cover relative bg-red-300 z-0">
@@ -57,7 +55,9 @@ export default function Workouts() {
             scene="https://prod.spline.design/267PHsT9Kp1A2iJ6/scene.splinecode"
           />
 
-          <h1 className="absolute left-7 bottom-32 text-9xl mb-7">Welcome to</h1>
+          <h1 className="absolute left-7 bottom-32 text-9xl mb-7">
+            Welcome to
+          </h1>
           <h1 className="absolute left-7 bottom-12 text-8xl">
             <span className="text-red-600">Health Sync</span>
             <span className="text-black">.</span>
