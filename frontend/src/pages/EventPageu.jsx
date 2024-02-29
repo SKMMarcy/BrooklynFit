@@ -252,6 +252,7 @@ export default function EventPage() {
             </p>
 
             <div className="mt-5">
+              {showRoom()}
               {currentUser &&
               currentUser.id !== event.user_id &&
               event.id &&
@@ -261,10 +262,6 @@ export default function EventPage() {
                   eventId={event.id}
                   joinedEvents={joinedEvents}
                 />
-              ) : event.location === 'Online Class' ? (
-                <div className="flex justify-center items-center text-black">
-                  {event && showRoom()}
-                </div>
               ) : (
                 <button style={buttonStyles}>
                   <p className="font-bold"> Your Event </p>
