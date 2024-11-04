@@ -32,6 +32,10 @@ Integrating Three.js with user interaction.
 2. **Journal Page:** Users can keep a journal to record thoughts, aspirations, and more.
 3. **Fitness Page:** Users can view a 3D model of the human body, highlighting muscle groups and seeing recommended exercises. Integrated API provides fitness resources.
 
+## Links
+1. Deployed site: https://healthsync-9q0e.onrender.com/
+2. Demo: https://drive.google.com/file/d/1LvGb24L6OdxFjjoU0yCRUNLBLhygwTU0/view?resourcekey
+
 ## Sources
 - Fitness API
 - [Iowa State University Department of Kinesiology](https://kin.hs.iastate.edu/group-exercise-may-be-even-better-for-you-than-solo-workouts-heres-why/)
